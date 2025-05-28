@@ -1,0 +1,56 @@
+A Ritesh Reddy
++ Hyderabad,Telangana
+# riteshaletisvn@gmail.com.com
+ 9347251063
+Introduction!
+I am A Ritesh Reddy, a passionate Computer Science and Engineering (CSE) student, currently pursuing my B.Tech with
+an expected graduation in 2027. I have a strong foundation in Machine Learning, AWS Cloud Computing, and Tensor-
+Flow, and I’m particularly interested in AI-driven analytics and intelligent automation. My goal is to become a software
+engineer and leverage my knowledge to build innovative and efficient solutions.
+Education
+B V Raju Institute of Technology, Computer Science and Engineering
+• GPA: 8.81/10.0
+2023 – 2027
+Trividhya junior college, M P C
+• Percentage: 94.9
+• EAMCET: rank 8141
+• JEE mains: 89.5 percentile
+2021 – 2023
+Geetanjali the Global School, 10’th standard
+• GPA: 8/10.0
+2023 – 2027
+Projects
+Smart Inventory Management System (SIMS)
+• Developed an IoT-based system to track inventory in real-time and forecast sales
+using machine learning.
+• Utilized blockchain for secure transaction and inventory data storage to ensure
+transparency and prevent fraud.
+• Technologies: Python, IoT, Machine Learning, Blockchain
+(inprogress)
+Diabetes Prediction Model
+• Built a machine learning model to predict whether a person has diabetes using
+Logistic Regression.
+• Evaluated the model using key metrics such as Accuracy, Precision, Recall, and
+F1-Score.
+• Technologies: Python, Scikit-Learn, Machine LearningXML
+Healthcare Data Collection Platform
+• Developingaplatformtoenableindividualstocollecttheirhealthcarehistorydata
+from across the nation, simplifying access to personal medical records.
+• Aiming to improve the ease of healthcare management and empower users with
+their health data.
+• Technologies: AWS, Google Cloud, Python, Cloud Computing
+inprogress
+Ritesh’s CV - Page 1 of 2
+2024
+Certifications
+Mastering Data with Machine Learning Internship - IBM SkillsBuild
+Explore Machine Learning using Python - Infosys Springboard
+Cloud Computing Training and Internship - GenZ Educators
+Joy of computing with pyhton-NPTEL
+Deep learning IIT Roopar - NPTEL
+Deep learning for NLP - NPTEL
+Technologies
+Languages: C++(basic), Java(basic), python(expert), C (expert)
+Technologies: Machine learning, Deep learning, Tensorflow, Cloud computing, NLP(basics), DSA
+Tools: Jupyter notebook, anaconda, aws, vscode.
+Ritesh’s CV - Page 2 of 2

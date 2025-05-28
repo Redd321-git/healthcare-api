@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.env
+*.sqlite3
+
+# FastAPI + Uvicorn
+*.log
+
+# VS Code or IDE files
+.vscode/
+.idea/
+
+# Dependency files
+venv/

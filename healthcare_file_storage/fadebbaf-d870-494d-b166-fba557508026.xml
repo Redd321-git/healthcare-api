@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hospital>
+    <Patient>
+        <PatientID>12345</PatientID>
+        <Name>John Doe</Name>
+        <Age>35</Age>
+        <Gender>Male</Gender>
+        <Diagnosis>Diabetes Type 2</Diagnosis>
+        <Medications>
+            <Medication>
+                <Name>Metformin</Name>
+                <Dosage>500mg</Dosage>
+                <Frequency>Twice a day</Frequency>
+            </Medication>
+            <Medication>
+                <Name>Atorvastatin</Name>
+                <Dosage>10mg</Dosage>
+                <Frequency>Once a day</Frequency>
+            </Medication>
+        </Medications>
+    </Patient>
+
+    <Patient>
+        <PatientID>67890</PatientID>
+        <Name>Jane Smith</Name>
+        <Age>29</Age>
+        <Gender>Female</Gender>
+        <Diagnosis>Hypertension</Diagnosis>
+        <Medications>
+            <Medication>
+                <Name>Lisinopril</Name>
+                <Dosage>20mg</Dosage>
+                <Frequency>Once a day</Frequency>
+            </Medication>
+        </Medications>
+    </Patient>
+</Hospital>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="login-container" id="loginContainer">
+        <h2>Healthcare Portal</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+        <p style="margin-top: 15px; text-align: center;">New user? <button onclick="showRegisterModal()" class="link-button">Register here</button></p>
+    </div>
+
+    <div class="dashboard" id="dashboard">
+        <div class="header">
+            <div class="header-left">
+                <button class="menu-btn" onclick="toggleSidebar()">☰ Menu</button>
+            </div>
+            <div class="header-center">
+                <h2 id="userRoleTitle">Welcome</h2>
+            </div>
+            <div class="header-right">
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+        </div>
+
+        <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2 id="sidebarTitle">Dashboard</h2>
+            </div>
+            <div id="sidebarLinks"></div>
+        </div>
+
+        <div class="content" id="contentSection">
+            <h2>Welcome to Healthcare System</h2>
+            <p>Please select an option from the menu to get started.</p>
+        </div>
+    </div>
+
+    <!-- Add Patient Modal -->
+    <div class="modal" id="addPatientModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add Patient by ID</h3>
+                <button class="close-btn" onclick="closeModal()">×</button>
+            </div>
+            <div id="patientAlert" class="alert"></div>
+            <form id="patientForm">
+                <div class="form-group">
+                    <label>Patient ID</label>
+                    <input type="text" id="simplePatientId" placeholder="e.g., P1234" required>
+                </div>
+                <button type="submit">Add Patient</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Request Records Modal -->
+    <div class="modal" id="requestRecordsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Request Medical Records</h3>
+                <button class="close-btn" onclick="closeModal()">×</button>
+            </div>
+            <div id="recordsAlert" class="alert"></div>
+            <form id="recordsForm">
+                <div class="form-group">
+                    <label>Hospital</label>
+                    <input type="text" id="requestHospital" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Date Range</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>From</label>
+                            <input type="date" id="fromDate">
+                        </div>
+                        <div class="form-group">
+                            <label>To</label>
+                            <input type="date" id="toDate">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Record Types</label>
+                    <div style="margin-top: 5px;">
+                        <label style="display: block;"><input type="checkbox" name="recordType" value="Medical Reports" checked> Medical Reports</label>
+                        <label style="display: block;"><input type="checkbox" name="recordType" value="Lab Results" checked> Lab Results</label>
+                        <label style="display: block;"><input type="checkbox" name="recordType" value="Prescriptions" checked> Prescriptions</label>
+                        <label style="display: block;"><input type="checkbox" name="recordType" value="Imaging" checked> Imaging</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Delivery Method</label>
+                    <select id="deliveryMethod">
+                        <option value="Portal">Through this portal</option>
+                        <option value="Email">Email</option>
+                        <option value="Mail">Physical Mail</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Notes (Optional)</label>
+                    <textarea id="requestNotes" rows="3"></textarea>
+                </div>
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Register New Account</h3>
+                <button class="close-btn" onclick="closeRegisterModal()">×</button>
+            </div>
+            <div id="registerAlert" class="alert"></div>
+            <form id="registerForm" onsubmit="register(event)">
+                <div class="form-group">
+                    <label>Role</label>
+                    <select id="registerRole" required>
+                        <option value="doctor">Doctor</option>
+                        <option value="patient">Patient</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" id="registerUsername" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="registerEmail" placeholder="Enter email" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="registerPassword" placeholder="Enter password" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

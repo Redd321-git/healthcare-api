@@ -1,0 +1,41 @@
+{
+    "Hospital": {
+        "Patient": [
+            {
+                "PatientID": "12345",
+                "Name": "John Doe",
+                "Age": "35",
+                "Gender": "Male",
+                "Diagnosis": "Diabetes Type 2",
+                "Medications": {
+                    "Medication": [
+                        {
+                            "Name": "Metformin",
+                            "Dosage": "500mg",
+                            "Frequency": "Twice a day"
+                        },
+                        {
+                            "Name": "Atorvastatin",
+                            "Dosage": "10mg",
+                            "Frequency": "Once a day"
+                        }
+                    ]
+                }
+            },
+            {
+                "PatientID": "67890",
+                "Name": "Jane Smith",
+                "Age": "29",
+                "Gender": "Female",
+                "Diagnosis": "Hypertension",
+                "Medications": {
+                    "Medication": {
+                        "Name": "Lisinopril",
+                        "Dosage": "20mg",
+                        "Frequency": "Once a day"
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+fastapi==0.70.0
+sqlalchemy==1.4.23
+psycopg2-binary==2.9.1
+pydantic==1.8.2
+passlib==1.7.4
+jose==1.0.1
+httpx==0.19.0
+boto3==1.18.16
+fitz==0.0.4
+xmltodict==0.12.0

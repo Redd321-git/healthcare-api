@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PatientRecord>
+    <PatientID>123456</PatientID>
+    <Name>
+        <FirstName>Ritesh</FirstName>
+        <LastName>Reddy</LastName>
+    </Name>
+    <DOB>2004-05-15</DOB>
+    <Gender>Male</Gender>
+    <Contact>
+        <Phone>9347251063</Phone>
+        <Email>ritesh@example.com</Email>
+    </Contact>
+    <MedicalHistory>
+        <Condition>
+            <Name>Diabetes</Name>
+            <DiagnosedOn>2022-03-01</DiagnosedOn>
+            <Status>Under Control</Status>
+        </Condition>
+        <Condition>
+            <Name>Hypertension</Name>
+            <DiagnosedOn>2021-06-10</DiagnosedOn>
+            <Status>Ongoing</Status>
+        </Condition>
+    </MedicalHistory>
+    <Prescriptions>
+        <Prescription>
+            <Medicine>Metformin</Medicine>
+            <Dosage>500mg</Dosage>
+            <Frequency>Twice a day</Frequency>
+        </Prescription>
+        <Prescription>
+            <Medicine>Amlodipine</Medicine>
+            <Dosage>5mg</Dosage>
+            <Frequency>Once a day</Frequency>
+        </Prescription>
+    </Prescriptions>
+</PatientRecord>
