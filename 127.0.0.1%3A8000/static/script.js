@@ -871,6 +871,7 @@ async function searchRecords() {
                                    <option value="pdf">PDF</option>
                                    <option value="txt">TXT</option>
                                    <option value="docx">DOCX</option>
+                                   <option value="json">JSON</option>
                             </select>
                             <button class="small-btn" onclick='convertFile(${JSON.stringify(record)},"format-${record.file_id}")'>Convert</button>
 
